@@ -130,16 +130,32 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  color: #fff;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   transition: all 0.3s;
+  /* only for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn--full:link,
@@ -180,6 +196,11 @@ body {
 .link:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .margin-right-sm {
